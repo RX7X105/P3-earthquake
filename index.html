@@ -88,7 +88,7 @@ button.active{
     color:#000;
 }
 /* ビーム */
-.line{
+.beam{
     background:#ffd700;
     color:#000;
 }
@@ -225,7 +225,12 @@ function showCol(col){
 
         if(action.includes("線取り")){
             cls+=" line";
+            
         }
+else if(action.includes("ビーム")){
+    cls+=" beam";
+}
+        
         else if(action.includes("交代")){
             cls+=" swap";
         }
